@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "isMdECy6ouOk7img34c0/wla8dt0y5M/1uJvWUN9WzN4ic941q7eU0/5kijv79sg6kXuG/5PmYTbK14q7J5mmQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\Testes\\Testes.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\csvhelper\\26.1.0\\csvhelper.26.1.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
