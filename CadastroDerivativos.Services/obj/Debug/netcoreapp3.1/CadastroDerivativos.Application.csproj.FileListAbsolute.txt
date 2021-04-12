@@ -1,0 +1,12 @@
+C:\Users\Asus\Desktop\CadastroDerivativos\CadastroDerivativos.Services\bin\Debug\netcoreapp3.1\CadastroDerivativos.Application.deps.json
+C:\Users\Asus\Desktop\CadastroDerivativos\CadastroDerivativos.Services\bin\Debug\netcoreapp3.1\CadastroDerivativos.Application.dll
+C:\Users\Asus\Desktop\CadastroDerivativos\CadastroDerivativos.Services\bin\Debug\netcoreapp3.1\CadastroDerivativos.Application.pdb
+C:\Users\Asus\Desktop\CadastroDerivativos\CadastroDerivativos.Services\bin\Debug\netcoreapp3.1\CadastroDerivativos.Domain.dll
+C:\Users\Asus\Desktop\CadastroDerivativos\CadastroDerivativos.Services\bin\Debug\netcoreapp3.1\CadastroDerivativos.Domain.pdb
+C:\Users\Asus\Desktop\CadastroDerivativos\CadastroDerivativos.Services\obj\Debug\netcoreapp3.1\CadastroDerivativos.Application.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\CadastroDerivativos\CadastroDerivativos.Services\obj\Debug\netcoreapp3.1\CadastroDerivativos.Application.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\CadastroDerivativos\CadastroDerivativos.Services\obj\Debug\netcoreapp3.1\CadastroDerivativos.Application.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\CadastroDerivativos\CadastroDerivativos.Services\obj\Debug\netcoreapp3.1\CadastroDerivativos.Application.AssemblyInfo.cs
+C:\Users\Asus\Desktop\CadastroDerivativos\CadastroDerivativos.Services\obj\Debug\netcoreapp3.1\CadastroDerivativos.Application.csproj.CopyComplete
+C:\Users\Asus\Desktop\CadastroDerivativos\CadastroDerivativos.Services\obj\Debug\netcoreapp3.1\CadastroDerivativos.Application.dll
+C:\Users\Asus\Desktop\CadastroDerivativos\CadastroDerivativos.Services\obj\Debug\netcoreapp3.1\CadastroDerivativos.Application.pdb

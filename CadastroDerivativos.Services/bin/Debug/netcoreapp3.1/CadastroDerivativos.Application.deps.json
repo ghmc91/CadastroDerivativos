@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "CadastroDerivativos.Application/1.0.0": {
+        "dependencies": {
+          "CadastroDerivativos.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CadastroDerivativos.Application.dll": {}
+        }
+      },
+      "CadastroDerivativos.Domain/1.0.0": {
+        "runtime": {
+          "CadastroDerivativos.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CadastroDerivativos.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CadastroDerivativos.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

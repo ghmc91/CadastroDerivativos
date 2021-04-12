@@ -144,9 +144,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Repositories\\CadastroDerivativos.Data.csproj",
-      "projectName": "CadastroDerivativos.Data",
-      "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Repositories\\CadastroDerivativos.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Repositories\\CadastroDerivativos.Infra.Data.csproj",
+      "projectName": "CadastroDerivativos.Infra.Data",
+      "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Repositories\\CadastroDerivativos.Infra.Data.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Repositories\\obj\\",
       "projectStyle": "PackageReference",

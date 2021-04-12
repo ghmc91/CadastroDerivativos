@@ -1,0 +1,316 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\WebApplication1\\CadastroDerivativos.WebApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\CadastroDerivativos.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\CadastroDerivativos.Domain.csproj",
+        "projectName": "CadastroDerivativos.Domain",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\CadastroDerivativos.Domain.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Infra.IoC\\CadastroDerivativos.Infra.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Infra.IoC\\CadastroDerivativos.Infra.IoC.csproj",
+        "projectName": "CadastroDerivativos.Infra.IoC",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Infra.IoC\\CadastroDerivativos.Infra.IoC.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Infra.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\CadastroDerivativos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\CadastroDerivativos.Domain.csproj"
+              },
+              "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Repositories\\CadastroDerivativos.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Repositories\\CadastroDerivativos.Infra.Data.csproj"
+              },
+              "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Services\\CadastroDerivativos.Application.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Services\\CadastroDerivativos.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Repositories\\CadastroDerivativos.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Repositories\\CadastroDerivativos.Infra.Data.csproj",
+        "projectName": "CadastroDerivativos.Infra.Data",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Repositories\\CadastroDerivativos.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\CadastroDerivativos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\CadastroDerivativos.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[26.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Services\\CadastroDerivativos.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Services\\CadastroDerivativos.Application.csproj",
+        "projectName": "CadastroDerivativos.Application",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Services\\CadastroDerivativos.Application.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\CadastroDerivativos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\CadastroDerivativos.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\WebApplication1\\CadastroDerivativos.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\WebApplication1\\CadastroDerivativos.WebApi.csproj",
+        "projectName": "CadastroDerivativos.WebApi",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\WebApplication1\\CadastroDerivativos.WebApi.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\WebApplication1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\CadastroDerivativos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\CadastroDerivativos.Domain.csproj"
+              },
+              "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Infra.IoC\\CadastroDerivativos.Infra.IoC.csproj": {
+                "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Infra.IoC\\CadastroDerivativos.Infra.IoC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -17,21 +17,15 @@ namespace Testes
         {
             try
             {
-                var equityOpts = CadastroDerivativos.Data.Csv.CsvReader.Read<EquityOptAux, EquityOptMapping>(
+                var equityOpts = CadastroDerivativos.Data.Csv.CsvReader.Read<EquityOpt, EquityOptMapping>(
                     "C:\\Users\\Asus\\Desktop\\to_upload\\Ticker_Off.csv", ",", Encoding.Default, "pt-BR");
 
                 equityOpts.ToList().ForEach(x =>
                 {
-                    x.ReducedTicker = x.Ticker.Split().First();
+                    Console.WriteLine(x.Ticker + " - " + x.Style);
                 });
 
-                var equityOptsAux = equityOpts.GroupBy(x => x.ReducedTicker)
-                                              .Select(i => i.First())
-                                              .ToList();
-
-                equityOptsAux.ToCsv<EquityOptAuxMapping, EquityOptAux>("C:\\Users\\Asus\\Desktop\\to_upload\\Ticker_Off_Reduced.csv", ",", Encoding.Default, "pt-BR");
-
-            }
+ }
             catch (FieldValidationException ex)
             {
                 throw new Exception(ex.Message);

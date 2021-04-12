@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "CadastroDerivativos.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/CadastroDerivativos.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CadastroDerivativos.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CadastroDerivativos.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CadastroDerivativos.Domain/CadastroDerivativos.Domain.csproj",
+      "msbuildProject": "../CadastroDerivativos.Domain/CadastroDerivativos.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "CadastroDerivativos.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Asus\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\CadastroDerivativos.Domain.csproj": {
+              "projectPath": "C:\\Users\\Asus\\Desktop\\CadastroDerivativos\\CadastroDerivativos.Domain\\CadastroDerivativos.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

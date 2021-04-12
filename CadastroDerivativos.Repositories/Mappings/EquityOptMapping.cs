@@ -18,21 +18,24 @@ namespace CadastroDerivativos.Data.Mappings
         }
     }
 
-    public class EquityOptAuxMapping : ClassMap<EquityOptAux>
+    public class OptInstrumentMapping : ClassMap<OptInstrument>
     {
-        public EquityOptAuxMapping()
+        public OptInstrumentMapping()
         {
             Map(x => x.Ticker);
             Map(x => x.Instrument);
-            Map(x => x.MaturityLabel).Name("Maturity Label");
-            Map(x => x.Strike);
-            Map(x => x.Payout);
-            Map(x => x.Style);
-            Map(x => x.Maturity).TypeConverterOption.Format("dd/MM/yyyy");
-            Map(x => x.Market);
-            Map(x => x.ReducedTicker);
         }
     }
+
+    public class OptMarketMapping : ClassMap<OptMarket>
+    {
+        public OptMarketMapping()
+        {
+            Map(x => x.Ticker);
+            Map(x => x.Market);
+        }
+    }
+    
 
 }
 

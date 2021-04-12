@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{52EB24F6-DA29-4FF0-9C29-66C593FE5616}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroDerivativos.WebApi", "WebApplication1\CadastroDerivativos.WebApi.csproj", "{52EB24F6-DA29-4FF0-9C29-66C593FE5616}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroDerivativos.Domain", "CadastroDerivativos.Domain\CadastroDerivativos.Domain.csproj", "{7C908ACC-3CD6-434E-8E43-D408EF63B8F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroDerivativos.Domain", "CadastroDerivativos.Domain\CadastroDerivativos.Domain.csproj", "{7C908ACC-3CD6-434E-8E43-D408EF63B8F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroDerivativos.Services", "CadastroDerivativos.Services\CadastroDerivativos.Services.csproj", "{E064AA3A-6285-442B-BBF2-831AAB345075}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroDerivativos.Application", "CadastroDerivativos.Services\CadastroDerivativos.Application.csproj", "{E064AA3A-6285-442B-BBF2-831AAB345075}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroDerivativos.Data", "CadastroDerivativos.Repositories\CadastroDerivativos.Data.csproj", "{0E5F1E6F-EB23-423B-9412-F7EEEDCE897B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CadastroDerivativos.Infra.Data", "CadastroDerivativos.Repositories\CadastroDerivativos.Infra.Data.csproj", "{0E5F1E6F-EB23-423B-9412-F7EEEDCE897B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testes", "Testes\Testes.csproj", "{732441A1-2DF2-4902-9ABB-9EC6DAEE6636}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testes", "Testes\Testes.csproj", "{732441A1-2DF2-4902-9ABB-9EC6DAEE6636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroDerivativos.Infra.IoC", "CadastroDerivativos.Infra.IoC\CadastroDerivativos.Infra.IoC.csproj", "{2B301D15-852D-4061-A7A0-8048E79E86C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{732441A1-2DF2-4902-9ABB-9EC6DAEE6636}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{732441A1-2DF2-4902-9ABB-9EC6DAEE6636}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{732441A1-2DF2-4902-9ABB-9EC6DAEE6636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B301D15-852D-4061-A7A0-8048E79E86C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B301D15-852D-4061-A7A0-8048E79E86C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B301D15-852D-4061-A7A0-8048E79E86C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B301D15-852D-4061-A7A0-8048E79E86C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
