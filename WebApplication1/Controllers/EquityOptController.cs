@@ -1,5 +1,8 @@
-﻿using CadastroDerivativos.Domain.Interfaces.Services;
+﻿using CadastroDerivativos.Domain.Entities.EquityOpt;
+using CadastroDerivativos.Domain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Text;
 
 namespace CadastroDerivativos.WebApi.Controllers
 {
@@ -14,10 +17,12 @@ namespace CadastroDerivativos.WebApi.Controllers
             _equityOptService = equityOptService;
         }
 
-        [HttpPost("{ticker}")]
-        public bool CheckTicker(string ticker)
+        [HttpGet("{ticker}")]
+        public EquityOptions CheckTicker(string ticker)
         {
-            return _equityOptService.hasTicker(ticker);
+            var newTicker = System.Net.WebUtility.UrlDecode(ticker);
+            newTicker = newTicker.Remove(newTicker.LastIndexOf(' ')).TrimEnd().ToUpper();
+            return _equityOptService.GetEquityOpts(newTicker);
         }
     }
 }

@@ -1,9 +1,9 @@
-﻿using CadastroDerivativos.Domain.Entities;
+﻿using CadastroDerivativos.Domain.Entities.EquityOpt;
 using CsvHelper.Configuration;
 
 namespace CadastroDerivativos.Data.Mappings
 {
-    public class EquityOptMapping : ClassMap<EquityOpt>
+    public class EquityOptMapping : ClassMap<EquityOptions>
     {
         public EquityOptMapping()
         {
@@ -22,7 +22,7 @@ namespace CadastroDerivativos.Data.Mappings
     {
         public OptInstrumentMapping()
         {
-            Map(x => x.Ticker);
+            Map(x => x.Ticker).Name("Reduced_Ticker");
             Map(x => x.Instrument);
         }
     }
@@ -31,7 +31,7 @@ namespace CadastroDerivativos.Data.Mappings
     {
         public OptMarketMapping()
         {
-            Map(x => x.Ticker);
+            Map(x => x.Ticker).Name("Reduced_Ticker");
             Map(x => x.Market);
         }
     }

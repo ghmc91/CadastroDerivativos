@@ -15,21 +15,12 @@ namespace Testes
     {
         static void Main(string[] args)
         {
-            try
-            {
-                var equityOpts = CadastroDerivativos.Data.Csv.CsvReader.Read<EquityOpt, EquityOptMapping>(
-                    "C:\\Users\\Asus\\Desktop\\to_upload\\Ticker_Off.csv", ",", Encoding.Default, "pt-BR");
-
-                equityOpts.ToList().ForEach(x =>
-                {
-                    Console.WriteLine(x.Ticker + " - " + x.Style);
-                });
-
- }
-            catch (FieldValidationException ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            var ticker = "EWZ US 04/16/21 C144 Equity";
+            var tickerSplit = ticker.Split();
+            var maturtiy = tickerSplit[tickerSplit.Length - 3];
+            var date = Convert.ToDateTime(maturtiy, CultureInfo.InvariantCulture);
+            var date2 = DateTime.Parse(date.ToShortDateString(), CultureInfo.GetCultureInfo("pt-BR"));
+            Console.WriteLine(date2);
         }
     }
 }

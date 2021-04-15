@@ -1,4 +1,5 @@
-﻿using CadastroDerivativos.Domain.Interfaces;
+﻿using CadastroDerivativos.Domain.Entities.EquityOpt;
+using CadastroDerivativos.Domain.Interfaces;
 using CadastroDerivativos.Domain.Interfaces.Services;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,24 @@ namespace CadastroDerivativos.Application.Services
         public EquityOptService(IEquityOptRepository equityOptRepository)
         {
             _equityOptRepository = equityOptRepository;
+        }
+
+        public EquityOptions GetEquityOpts(string ticker)
+        {
+            var instrument = _equityOptRepository.GetOptInstrument();
+            var market = _equityOptRepository.GetOptMarket();
+            var equityOpts = new EquityOptions();
+            equityOpts = equityOpts.LoadData(ticker, instrument, market);
+            var maturities = _equityOptRepository.GetMaturities(equityOpts.Market);
+            var equityOptsFull = equityOpts.GetMaturityLabel(maturities, equityOpts);
+            return equityOptsFull;
+        }
+
+        public DateTime GetMaturity(string ticker)
+        {
+            var maturity = ticker[ticker.Length - 2];
+            return DateTime.Now;
+
         }
 
         public bool hasTicker(string ticker)
