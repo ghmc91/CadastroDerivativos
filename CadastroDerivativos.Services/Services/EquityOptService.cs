@@ -2,9 +2,7 @@
 using CadastroDerivativos.Domain.Interfaces;
 using CadastroDerivativos.Domain.Interfaces.Services;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace CadastroDerivativos.Application.Services
 {
@@ -15,6 +13,11 @@ namespace CadastroDerivativos.Application.Services
         public EquityOptService(IEquityOptRepository equityOptRepository)
         {
             _equityOptRepository = equityOptRepository;
+        }
+
+        public string GetActive(string ticker)
+        {
+            return ticker.Split()[0];
         }
 
         public EquityOptions GetEquityOpts(string ticker)
@@ -35,18 +38,24 @@ namespace CadastroDerivativos.Application.Services
 
         }
 
-        public bool hasTicker(string ticker)
+        public bool HasInstrument(string ticker)
         {
-            try
-            {
-                var tickerOff = _equityOptRepository.GetEquityOpts();
-                return tickerOff.Where(x => x.Ticker.Equals(ticker)).Any();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+            var instrumentTicker = _equityOptRepository.GetOptInstrument();
+            var active = GetActive(ticker);
+            return instrumentTicker.Where(x => x.Ticker.Equals(active)).Any();
+        }
 
+        public bool HasMarket(string ticker)
+        {
+            var marketTicker = _equityOptRepository.GetOptMarket();
+            var active = GetActive(ticker);
+            return marketTicker.Where(x => x.Ticker.Equals(active)).Any();
+        }
+
+        public bool HasTickerInBase(string ticker)
+        {
+            var equityOpts = _equityOptRepository.GetEquityOpts();
+            return equityOpts.Where(x => x.Ticker.Equals(ticker)).Any();
         }
     }
 }
