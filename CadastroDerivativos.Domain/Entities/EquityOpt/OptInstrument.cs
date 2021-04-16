@@ -1,8 +1,7 @@
 ﻿namespace CadastroDerivativos.Domain.Entities.EquityOpt
 {
-    public class OptInstrument
+    public class OptInstrument : EquityOptions
     {
-        public string Ticker { get; set; }
         public string Instrument { get; set; }
     }
 }

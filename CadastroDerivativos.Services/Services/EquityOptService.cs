@@ -2,6 +2,7 @@
 using CadastroDerivativos.Domain.Interfaces;
 using CadastroDerivativos.Domain.Interfaces.Services;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace CadastroDerivativos.Application.Services
@@ -24,18 +25,40 @@ namespace CadastroDerivativos.Application.Services
         {
             var instrument = _equityOptRepository.GetOptInstrument();
             var market = _equityOptRepository.GetOptMarket();
-            var equityOpts = new EquityOptions();
-            equityOpts = equityOpts.LoadData(ticker, instrument, market);
-            var maturities = _equityOptRepository.GetMaturities(equityOpts.Market);
-            var equityOptsFull = equityOpts.GetMaturityLabel(maturities, equityOpts);
+            var equityOpt = new EquityOptions();
+            equityOpt = equityOpt.LoadData(ticker, instrument, market);
+            var maturities = _equityOptRepository.GetMaturities(equityOpt.Market);
+            var equityOptsFull = equityOpt.GetMaturityLabel(maturities, equityOpt);
             return equityOptsFull;
+        }
+
+        public IEnumerable<EquityOptions> GetEquityOpts()
+        {
+            var tickers = GetTickers().ToList();
+            var market = _equityOptRepository.GetOptMarket();
+            var instrument = _equityOptRepository.GetOptInstrument();
+            var equityOpt = new EquityOptions();
+            List<EquityOptions> equitiesOpts = new List<EquityOptions>();
+            tickers.ForEach(x =>            
+            {
+                var newTicker = x.Ticker.Remove(x.Ticker.LastIndexOf(' ')).TrimEnd();
+                equityOpt = equityOpt.LoadData(newTicker, instrument, market);
+                var maturities = _equityOptRepository.GetMaturities(equityOpt.Market);
+                var equityOptsFull = equityOpt.GetMaturityLabel(maturities, equityOpt);
+                equitiesOpts.Add(equityOptsFull);
+            });
+            return equitiesOpts;
         }
 
         public DateTime GetMaturity(string ticker)
         {
             var maturity = ticker[ticker.Length - 2];
             return DateTime.Now;
+        }
 
+        public IEnumerable<TickerGustavex> GetTickers()
+        {
+            return _equityOptRepository.GetTickers();
         }
 
         public bool HasInstrument(string ticker)

@@ -32,5 +32,10 @@ namespace CadastroDerivativos.Data.Repositories
         {
             return CsvReader.Read<OptMarket, OptMarketMapping>("C:\\Users\\Asus\\Documents\\Bases\\EquityOpt\\BasesAux\\Market_Ticker.csv", ",", Encoding.Default, "pt-BR");
         }
+
+        public IEnumerable<TickerGustavex> GetTickers()
+        {
+            return CsvReader.Read<TickerGustavex, TickersGustavexMapping>("C:\\Users\\Asus\\Documents\\Bases\\EquityOpt\\Gustavex\\Gustavex.csv", ",", Encoding.Default, "pt-BR");
+        }
     }
 }

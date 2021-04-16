@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace CadastroDerivativos.Domain.Entities.EquityOpt
 {
-    public class EquityOptions
+    public class EquityOptions : TickerGustavex
     {
         public EquityOptions()
         {
@@ -28,7 +28,6 @@ namespace CadastroDerivativos.Domain.Entities.EquityOpt
             Maturity = maturity;
             Style = style;
         }
-        public string Ticker { get; set; }
         public string Instrument { get; set; }
         public string MaturityLabel { get; set; }
         public decimal Strike { get; set; }

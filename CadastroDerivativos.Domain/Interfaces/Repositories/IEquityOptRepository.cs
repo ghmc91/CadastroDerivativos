@@ -5,10 +5,10 @@ namespace CadastroDerivativos.Domain.Interfaces
 {
     public interface IEquityOptRepository
     {
-        public IEnumerable<EquityOptions> GetEquityOpts();
-        public IEnumerable<OptInstrument> GetOptInstrument();
-        public IEnumerable<OptMarket> GetOptMarket();
-        public IEnumerable<Maturity> GetMaturities(string market);
-
+        IEnumerable<EquityOptions> GetEquityOpts();
+        IEnumerable<OptInstrument> GetOptInstrument();
+        IEnumerable<OptMarket> GetOptMarket();
+        IEnumerable<Maturity> GetMaturities(string market);
+        IEnumerable<TickerGustavex> GetTickers();
     }
 }

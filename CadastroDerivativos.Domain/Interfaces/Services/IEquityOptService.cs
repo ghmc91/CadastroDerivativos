@@ -1,5 +1,6 @@
 ﻿using CadastroDerivativos.Domain.Entities.EquityOpt;
 using System;
+using System.Collections.Generic;
 
 namespace CadastroDerivativos.Domain.Interfaces.Services
 {
@@ -9,6 +10,7 @@ namespace CadastroDerivativos.Domain.Interfaces.Services
         bool HasInstrument(string ticker);
         bool HasMarket(string ticker);
         string GetActive(string ticker);
-        EquityOptions GetEquityOpts(string ticker);
+        IEnumerable<EquityOptions> GetEquityOpts();
+        IEnumerable<TickerGustavex> GetTickers();
     }
 }

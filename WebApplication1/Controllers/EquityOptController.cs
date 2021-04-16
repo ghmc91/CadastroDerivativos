@@ -1,8 +1,6 @@
 ﻿using CadastroDerivativos.Domain.Entities.EquityOpt;
 using CadastroDerivativos.Domain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Text;
 
 namespace CadastroDerivativos.WebApi.Controllers
 {
