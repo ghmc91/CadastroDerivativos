@@ -38,7 +38,7 @@ namespace CadastroDerivativos.Application.Services
             var market = _equityOptRepository.GetOptMarket();
             var instrument = _equityOptRepository.GetOptInstrument();
             var equityOpt = new EquityOptions();
-            List<EquityOptions> equitiesOpts = new List<EquityOptions>();
+            var equitiesOpts = new List<EquityOptions>();
             tickers.ForEach(x =>            
             {
                 var newTicker = x.Ticker.Remove(x.Ticker.LastIndexOf(' ')).TrimEnd();
