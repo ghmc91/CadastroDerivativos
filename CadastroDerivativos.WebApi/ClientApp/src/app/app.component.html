@@ -1,6 +1,24 @@
 <body>
-  <app-nav-menu></app-nav-menu>
-  <div class="container">
-    <router-outlet></router-outlet>
+  <div>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button mat-icon-button>
+          <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+      </mat-toolbar-row>    
+    </mat-toolbar>   
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav>
+        <mat-nav-list>  
+          <a mat-list-item [routerLink]="'/equityopt'"> Opções de ações </a>  
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <div class="container" style="height: 90vh;">
+          <router-outlet></router-outlet>
+        </div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
   </div>
+
 </body>
